@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://diob7p6esxnm8"
-path="res://.godot/imported/wheelchair-deluxe.glb-2f16d5edbbd0b01c58fe2692689a3926.scn"
+uid="uid://gukwlxci1q62"
+path="res://.godot/imported/aid-glasses.glb-5112523c2f0cc609a041f0a7ca5ca9ae.scn"
 
 [deps]
 
-source_file="res://GLB format/wheelchair-deluxe.glb"
-dest_files=["res://.godot/imported/wheelchair-deluxe.glb-2f16d5edbbd0b01c58fe2692689a3926.scn"]
+source_file="res://CharacterModels/aid-glasses.glb"
+dest_files=["res://.godot/imported/aid-glasses.glb-5112523c2f0cc609a041f0a7ca5ca9ae.scn"]
 
 [params]
 

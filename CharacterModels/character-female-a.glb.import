@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c2m3gjov8lr6j"
-path="res://.godot/imported/aid-sunglasses.glb-6d95c8456496ab01867f1430432dc666.scn"
+uid="uid://edasvdcaad4c"
+path="res://.godot/imported/character-female-a.glb-9d50ef419ded73ee6b8e1d5adff965d9.scn"
 
 [deps]
 
-source_file="res://GLB format/aid-sunglasses.glb"
-dest_files=["res://.godot/imported/aid-sunglasses.glb-6d95c8456496ab01867f1430432dc666.scn"]
+source_file="res://CharacterModels/character-female-a.glb"
+dest_files=["res://.godot/imported/character-female-a.glb-9d50ef419ded73ee6b8e1d5adff965d9.scn"]
 
 [params]
 

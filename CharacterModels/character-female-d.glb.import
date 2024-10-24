@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dl51emtfix8lg"
-path="res://.godot/imported/aid-cane.glb-32675647f59b64e5709b8e37b5201ee3.scn"
+uid="uid://dkht1phqrgfh5"
+path="res://.godot/imported/character-female-d.glb-cc5af5075c16d3a54f0dd1c31e7e423c.scn"
 
 [deps]
 
-source_file="res://GLB format/aid-cane.glb"
-dest_files=["res://.godot/imported/aid-cane.glb-32675647f59b64e5709b8e37b5201ee3.scn"]
+source_file="res://CharacterModels/character-female-d.glb"
+dest_files=["res://.godot/imported/character-female-d.glb-cc5af5075c16d3a54f0dd1c31e7e423c.scn"]
 
 [params]
 

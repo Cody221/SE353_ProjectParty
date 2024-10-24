@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dkfih68nkrpl1"
-path="res://.godot/imported/aid-mask.glb-dd3e8d9a5a38660f41f8202e602189f5.scn"
+uid="uid://b4omafwp0p40h"
+path="res://.godot/imported/aid-defibrillator-red.glb-0537253eabdbf372520e676c9343cb54.scn"
 
 [deps]
 
-source_file="res://GLB format/aid-mask.glb"
-dest_files=["res://.godot/imported/aid-mask.glb-dd3e8d9a5a38660f41f8202e602189f5.scn"]
+source_file="res://CharacterModels/aid-defibrillator-red.glb"
+dest_files=["res://.godot/imported/aid-defibrillator-red.glb-0537253eabdbf372520e676c9343cb54.scn"]
 
 [params]
 

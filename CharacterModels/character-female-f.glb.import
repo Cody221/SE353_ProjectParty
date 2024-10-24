@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b4ndy4yjqlqfa"
-path="res://.godot/imported/aid-cane-blind.glb-e85a5c05f5861658cd72bb188393ebb7.scn"
+uid="uid://bvkm04jg7xtvp"
+path="res://.godot/imported/character-female-f.glb-c25c12e09c3436d1f30db16204055537.scn"
 
 [deps]
 
-source_file="res://GLB format/aid-cane-blind.glb"
-dest_files=["res://.godot/imported/aid-cane-blind.glb-e85a5c05f5861658cd72bb188393ebb7.scn"]
+source_file="res://CharacterModels/character-female-f.glb"
+dest_files=["res://.godot/imported/character-female-f.glb-c25c12e09c3436d1f30db16204055537.scn"]
 
 [params]
 

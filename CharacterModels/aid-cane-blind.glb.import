@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cjvph534fdg21"
-path="res://.godot/imported/aid_hearing.glb-048a92f21249605eb9c9a4585e1dba42.scn"
+uid="uid://b4ndy4yjqlqfa"
+path="res://.godot/imported/aid-cane-blind.glb-ce75524faf0bde32d3f8a3f4e0d4ea93.scn"
 
 [deps]
 
-source_file="res://GLB format/aid_hearing.glb"
-dest_files=["res://.godot/imported/aid_hearing.glb-048a92f21249605eb9c9a4585e1dba42.scn"]
+source_file="res://CharacterModels/aid-cane-blind.glb"
+dest_files=["res://.godot/imported/aid-cane-blind.glb-ce75524faf0bde32d3f8a3f4e0d4ea93.scn"]
 
 [params]
 

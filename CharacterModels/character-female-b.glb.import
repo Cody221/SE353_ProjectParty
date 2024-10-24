@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b2t02f5nf7cem"
-path="res://.godot/imported/wheelchair.glb-b567af5c16cabd9aac263f049fe553e9.scn"
+uid="uid://d367fhsr360we"
+path="res://.godot/imported/character-female-b.glb-308f69982f25c85aef82496037d85dd5.scn"
 
 [deps]
 
-source_file="res://GLB format/wheelchair.glb"
-dest_files=["res://.godot/imported/wheelchair.glb-b567af5c16cabd9aac263f049fe553e9.scn"]
+source_file="res://CharacterModels/character-female-b.glb"
+dest_files=["res://.godot/imported/character-female-b.glb-308f69982f25c85aef82496037d85dd5.scn"]
 
 [params]
 

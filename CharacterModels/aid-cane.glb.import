@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://gukwlxci1q62"
-path="res://.godot/imported/aid-glasses.glb-6542fb9f3c0de58368b988b911f4d6e1.scn"
+uid="uid://dl51emtfix8lg"
+path="res://.godot/imported/aid-cane.glb-833d13faa4b6e87dcbd4bca85db49b70.scn"
 
 [deps]
 
-source_file="res://GLB format/aid-glasses.glb"
-dest_files=["res://.godot/imported/aid-glasses.glb-6542fb9f3c0de58368b988b911f4d6e1.scn"]
+source_file="res://CharacterModels/aid-cane.glb"
+dest_files=["res://.godot/imported/aid-cane.glb-833d13faa4b6e87dcbd4bca85db49b70.scn"]
 
 [params]
 

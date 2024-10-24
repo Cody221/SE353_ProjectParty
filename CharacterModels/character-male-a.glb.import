@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ni1wtsmtxbii"
-path="res://.godot/imported/aid-cane-low-vision.glb-03fbe185fefbbbc8e5a6845e9d0708da.scn"
+uid="uid://tqpn18umfm85"
+path="res://.godot/imported/character-male-a.glb-e82005900cd08d887cded9b08827c75b.scn"
 
 [deps]
 
-source_file="res://GLB format/aid-cane-low-vision.glb"
-dest_files=["res://.godot/imported/aid-cane-low-vision.glb-03fbe185fefbbbc8e5a6845e9d0708da.scn"]
+source_file="res://CharacterModels/character-male-a.glb"
+dest_files=["res://.godot/imported/character-male-a.glb-e82005900cd08d887cded9b08827c75b.scn"]
 
 [params]
 

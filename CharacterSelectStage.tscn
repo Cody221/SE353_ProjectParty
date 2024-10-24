@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkkumelg5mp1u"]
+
+[ext_resource type="PackedScene" uid="uid://bdr3somgesf2n" path="res://CharacterSelectUI.tscn" id="1_t1lvb"]
+[ext_resource type="PackedScene" uid="uid://ch2jodt6qh7k1" path="res://Characters/1.tscn" id="2_5xyvx"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.991445, 0.130526, 0, -0.130526, 0.991445, 0, 0.75, 2)
+fov = 45.0
+
+[node name="Control" parent="Camera3D" instance=ExtResource("1_t1lvb")]
+
+[node name="Nerd1" parent="." instance=ExtResource("2_5xyvx")]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.929307, 0.369309, 0, -0.369309, 0.929307, 0, 1.14723, 1.7065)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.13768)
+size = Vector3(5, 5, 1)

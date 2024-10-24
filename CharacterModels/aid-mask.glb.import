@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cnys3e4t64wcn"
-path="res://.godot/imported/character-female-c.glb-7ac3bf0e922c784e09bd247882bedb80.scn"
+uid="uid://dkfih68nkrpl1"
+path="res://.godot/imported/aid-mask.glb-55555261b7312075356c150de2aea17e.scn"
 
 [deps]
 
-source_file="res://GLB format/character-female-c.glb"
-dest_files=["res://.godot/imported/character-female-c.glb-7ac3bf0e922c784e09bd247882bedb80.scn"]
+source_file="res://CharacterModels/aid-mask.glb"
+dest_files=["res://.godot/imported/aid-mask.glb-55555261b7312075356c150de2aea17e.scn"]
 
 [params]
 

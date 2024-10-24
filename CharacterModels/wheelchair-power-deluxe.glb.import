@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cc5tvogx0buru"
-path="res://.godot/imported/character-male-b.glb-4f6c46bfbdd15a28f90211e8aec5cd4e.scn"
+uid="uid://di73whkak37r0"
+path="res://.godot/imported/wheelchair-power-deluxe.glb-3265037aac47e34a0bc19b6d6cf9bc3b.scn"
 
 [deps]
 
-source_file="res://GLB format/character-male-b.glb"
-dest_files=["res://.godot/imported/character-male-b.glb-4f6c46bfbdd15a28f90211e8aec5cd4e.scn"]
+source_file="res://CharacterModels/wheelchair-power-deluxe.glb"
+dest_files=["res://.godot/imported/wheelchair-power-deluxe.glb-3265037aac47e34a0bc19b6d6cf9bc3b.scn"]
 
 [params]
 
