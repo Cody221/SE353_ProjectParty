@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6nrr7ae5o6qh"]
+
+[ext_resource type="PackedScene" uid="uid://ch2jodt6qh7k1" path="res://Characters/1.tscn" id="1_lxy8i"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.196322, 1.71435)
+
+[node name="Nerd1" parent="." instance=ExtResource("1_lxy8i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00272763, 0, -0.0146754)

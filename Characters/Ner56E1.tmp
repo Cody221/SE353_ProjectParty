@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc2lpn6b7jmvs"]
+
+[ext_resource type="Script" path="res://Characters/nerd_1.gd" id="1_8dtnv"]
+[ext_resource type="PackedScene" uid="uid://b0os4mv76j0if" path="res://GLB format/character-male-e.glb" id="2_28bbw"]
+
+[node name="Nerd1" type="Node3D"]
+script = ExtResource("1_8dtnv")
+
+[node name="Nerd1" parent="." instance=ExtResource("2_28bbw")]

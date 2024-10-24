@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch2jodt6qh7k1"]
+
+[ext_resource type="PackedScene" uid="uid://b0os4mv76j0if" path="res://GLB format/character-male-e.glb" id="2_5a4dj"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/Nerd1.gd" id="2_qqq02"]
+
+[sub_resource type="GDScript" id="GDScript_tvfdo"]
+script/source = "extends Node3D
+
+@onready var anim = $Nerd1/AnimationPlayer
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	anim.play(\"walk\")
+"
+
+[node name="Nerd1" type="Node3D"]
+script = SubResource("GDScript_tvfdo")
+
+[node name="Nerd1" parent="." instance=ExtResource("2_5a4dj")]
+script = ExtResource("2_qqq02")
