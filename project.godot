@@ -23,6 +23,10 @@ GameManager="*res://Scripts/Managers/GameManager.gd"
 
 file_logging/enable_file_logging=true
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
+
 [input]
 
 Select={
