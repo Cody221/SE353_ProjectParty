@@ -1,0 +1,13 @@
+﻿Meeting Location: Villa Dining Room
+Due Date: 10/24 12:30PM
+What to do:
+Mason:
+* Get character models from kenney.nl
+* Rig 4 character models
+* Add Walk cycles for the rigged character models.
+* Make Select Character Screen
+Cody: 
+* Make grid based map
+* Make GameManager script
+* Make generic character scene 
+* Setup git repo for Godot

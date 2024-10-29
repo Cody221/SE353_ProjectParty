@@ -1,0 +1,25 @@
+﻿Scrum Master: Cody
+Sprint Number: 2
+Meeting Location: Villa Dining Room
+Due Date: 10/31 12:30PM
+What we did:
+Green is Completed
+Yellow is partially Completed
+Mason:
+* Get character models from kenney.nl
+* Rig 4 character models
+* Add Walk cycles for the rigged character models.
+* Make Select Character Screen
+Cody: 
+* Make grid based map
+* Make GameManager script
+* Make generic character scene 
+* Setup git repo for Godot 
+What to do:
+Mason:
+* Fully Implement Character Select Screen
+* Mock Up the Peer2Peer system
+Cody: 
+* DiceManager - for rolls in game 
+* Finish generic character scene
+* Player Move function for the board (overworld)
