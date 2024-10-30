@@ -3,7 +3,9 @@ extends Node3D
 @onready var cam = $Camera3D
 @onready var character = $Character
 @onready var characterBody = $Character/CharacterBody3D
-var myTurn : bool
+var isMyTurn : bool
+var heatlh
+var speed 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,8 +21,14 @@ func _input(event):
 		var res = raycast_from_mouse(2,20)
 		if res:
 			#emit the signal
-			res.collider.selected.emit()
+			#res.collider.selected.emit()
+			pass
 			
+
+func move():
+	if isMyTurn:
+		pass
+		
 
 #hitting a target returns the result(it's a dictionary) missing returns null
 func raycast_from_mouse(collisionMask, rayLength):

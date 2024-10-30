@@ -30,7 +30,7 @@ func handle_input(delta):
 
 func _input(event):
 	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			position += Vector3(0, 0.5, 0)
-		if ((event.button_index == MOUSE_BUTTON_WHEEL_DOWN) and !(position.y < 2)):
+		if ((event.button_index == MOUSE_BUTTON_WHEEL_UP) and !(position.y < 2)):
 			position += Vector3(0, -0.5, 0)
+		if  event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+			position += Vector3(0, 0.5, 0)

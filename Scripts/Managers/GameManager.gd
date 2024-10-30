@@ -13,3 +13,6 @@ func _process(_delta):
 
 func pass_turn():
 	pass
+
+func load_scene():
+	pass
