@@ -2,7 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://r5g0frtbhbr5" path="res://Assets/the_mesh_library.tres" id="1_htvon"]
 [ext_resource type="PackedScene" uid="uid://b0wfglqitf4g6" path="res://WorldScenes/Player.tscn" id="2_q7wq2"]
-[ext_resource type="PackedScene" uid="uid://ch2jodt6qh7k1" path="res://Characters/1.tscn" id="3_rh7j4"]
+[ext_resource type="PackedScene" uid="uid://ch2jodt6qh7k1" path="res://Characters/Nerd1.tscn" id="3_rh7j4"]
 
 [node name="SceneRoot" type="Node3D"]
 

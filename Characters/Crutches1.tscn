@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtyicrgkfm2qm"]
+
+[ext_resource type="PackedScene" uid="uid://edasvdcaad4c" path="res://CharacterModels/character-female-a.glb" id="1_jv6oq"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/Crutches1.gd" id="2_y8ry7"]
+
+[node name="Crutches1" type="Node3D"]
+script = ExtResource("2_y8ry7")
+
+[node name="Crutches1" parent="." instance=ExtResource("1_jv6oq")]

@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var anim = $Nerd1/AnimationPlayer
+@onready var anim = $Ponytails1/AnimationPlayer
 
 func CharacterSelectAnim() -> void:
 	#print(get_parent().get_tree().get_current_scene().name)

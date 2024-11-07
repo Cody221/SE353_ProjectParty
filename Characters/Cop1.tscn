@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d04sd7edrchr3"]
+
+[ext_resource type="PackedScene" uid="uid://bx631dhkk0m6t" path="res://CharacterModels/character-male-c.glb" id="1_cmkfd"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/Cop1.gd" id="2_ewop7"]
+
+[node name="Cop1" type="Node3D"]
+script = ExtResource("2_ewop7")
+
+[node name="Cop1" parent="." instance=ExtResource("1_cmkfd")]
