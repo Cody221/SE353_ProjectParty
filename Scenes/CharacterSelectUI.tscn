@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://bdr3somgesf2n"]
+[gd_scene load_steps=3 format=3 uid="uid://bdr3somgesf2n"]
+
+[ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="1_8xa0u"]
+
+[sub_resource type="Theme" id="Theme_jftq6"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_8xa0u")
 
 [node name="ItemList" type="ItemList" parent="."]
 layout_mode = 0
@@ -14,6 +19,7 @@ offset_left = 148.0
 offset_top = 215.0
 offset_right = 303.0
 offset_bottom = 400.0
+theme = SubResource("Theme_jftq6")
 item_count = 8
 item_0/text = "Character1"
 item_1/text = "Character2"
