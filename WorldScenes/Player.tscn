@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/CamControl.gd" id="1_noong"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_ybk8s"]
-[ext_resource type="PackedScene" uid="uid://crwjdfqojvf2q" path="res://Scenes/Character.tscn" id="2_47qxt"]
+[ext_resource type="PackedScene" uid="uid://crwjdfqojvf2q" path="res://WorldScenes/Character.tscn" id="2_47qxt"]
 
 [node name="Player" type="Node3D"]
 script = ExtResource("1_ybk8s")
