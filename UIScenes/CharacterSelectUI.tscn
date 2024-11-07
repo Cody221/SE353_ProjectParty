@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdr3somgesf2n"]
+[gd_scene load_steps=4 format=3 uid="uid://bdr3somgesf2n"]
 
 [ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="1_8xa0u"]
+[ext_resource type="Script" path="res://UIScenes/CharacterSelect.gd" id="2_ble2q"]
 
 [sub_resource type="Theme" id="Theme_jftq6"]
 
@@ -12,6 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_8xa0u")
+script = ExtResource("2_ble2q")
 
 [node name="ItemList" type="ItemList" parent="."]
 layout_mode = 0

@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkkumelg5mp1u"]
+[gd_scene load_steps=4 format=3 uid="uid://dkkumelg5mp1u"]
 
 [ext_resource type="PackedScene" uid="uid://bdr3somgesf2n" path="res://UIScenes/CharacterSelectUI.tscn" id="1_b66jb"]
+[ext_resource type="Script" path="res://WorldScenes/CharacterSelectScript.gd" id="1_fltjs"]
 [ext_resource type="PackedScene" uid="uid://ch2jodt6qh7k1" path="res://Characters/1.tscn" id="2_j567a"]
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_fltjs")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.991445, 0.130526, 0, -0.130526, 0.991445, 0, 0.75, 2)
