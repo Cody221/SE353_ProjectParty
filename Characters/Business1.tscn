@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cx036raonnrnu"]
 
 [ext_resource type="PackedScene" uid="uid://hfliovrud7fi" path="res://CharacterModels/character-male-d.glb" id="1_268q1"]
-[ext_resource type="Script" path="res://Scripts/CharacterScripts/Business1.gd" id="2_wself"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_s06m2"]
 
 [node name="Business1" type="Node3D"]
-script = ExtResource("2_wself")
+script = ExtResource("1_s06m2")
 
 [node name="Business1" parent="." instance=ExtResource("1_268q1")]

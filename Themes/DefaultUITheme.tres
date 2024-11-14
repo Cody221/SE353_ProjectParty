@@ -19,6 +19,7 @@ font_names = PackedStringArray("Comic Sans MS")
 font_weight = 999
 
 [resource]
+Button/font_sizes/font_size = 24
 Button/fonts/font = SubResource("SystemFont_flsio")
 Button/styles/hover = SubResource("StyleBoxFlat_u6v10")
 ItemList/font_sizes/font_size = 12
