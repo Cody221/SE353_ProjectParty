@@ -58,4 +58,4 @@ Right={
 
 [layer_names]
 
-3d_physics/layer_2="Selectable"
+3d_physics/layer_2="Player"

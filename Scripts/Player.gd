@@ -1,26 +1,38 @@
 extends Node3D
 
+@onready var ui = $UI
 @onready var cam = $Camera3D
 @onready var character = $Character
 @onready var characterBody = $Character/CharacterBody3D
-var myTurn : bool
+#stats
+var speed
+var health
+
+#signals 
+signal turn_changed(turnStart : bool)
+
+var myTurn : bool : 
+	get:
+		return myTurn
+	set(value):
+		if value == true:
+			turn_changed.emit(true)
+		else:
+			turn_changed.emit(false)
+		myTurn = value
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	GameManager.Players.append(self)
-	#characterBody.selected.connect(move)
+	ui.rollButton.pressed.connect(move)
+	turn_changed.connect(func(turnStart): ui.visible = turnStart)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
 
-func _input(event):
-	if event.is_action_pressed("Select"):
-		var res = raycast_from_mouse(2,20)
-		if res:
-			#emit the signal
-			res.collider.selected.emit()
-			
+func move():
+	var moveAmount = GameManager.diceManager.roll6(speed)
 
 #hitting a target returns the result(it's a dictionary) missing returns null
 func raycast_from_mouse(collisionMask, rayLength):

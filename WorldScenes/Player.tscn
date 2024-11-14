@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0wfglqitf4g6"]
+[gd_scene load_steps=6 format=3 uid="uid://b0wfglqitf4g6"]
 
 [ext_resource type="Script" path="res://Scripts/CamControl.gd" id="1_noong"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_ybk8s"]
 [ext_resource type="PackedScene" uid="uid://crwjdfqojvf2q" path="res://WorldScenes/Character.tscn" id="2_47qxt"]
+[ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="4_mu2gd"]
+[ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="5_eqyay"]
 
 [node name="Player" type="Node3D"]
 script = ExtResource("1_ybk8s")
@@ -14,3 +16,31 @@ cam_speed = 2
 
 [node name="Character" parent="." instance=ExtResource("2_47qxt")]
 top_level = true
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_mu2gd")
+script = ExtResource("5_eqyay")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_mu2gd")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="RollButton" type="Button" parent="UI/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Roll"
