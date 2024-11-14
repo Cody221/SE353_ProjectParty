@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfoy5uidk45rv"]
+
+[ext_resource type="PackedScene" uid="uid://cwtgq0a34uf3w" path="res://WorldScenes/TestScene.tscn" id="1_bu6nt"]
+[ext_resource type="Script" path="res://addons/MultiplayCore/MultiPlay.gd" id="2_2i7eu"]
+[ext_resource type="Script" path="res://addons/MultiplayCore/net_protocols/ENetProtocol.gd" id="3_oulrk"]
+
+[node name="Node" type="Node"]
+
+[node name="SceneRoot" parent="." instance=ExtResource("1_bu6nt")]
+
+[node name="MultiPlayCore" type="Node" parent="."]
+script = ExtResource("2_2i7eu")
+
+[node name="ENetProtocol" type="Node" parent="MultiPlayCore"]
+script = ExtResource("3_oulrk")

@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://bq3h077jslc2c"]
 
 [ext_resource type="PackedScene" uid="uid://cc5tvogx0buru" path="res://CharacterModels/character-male-b.glb" id="1_0gun8"]
-[ext_resource type="Script" path="res://Scripts/CharacterScripts/Gramps1.gd" id="1_xp6p5"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_i87r0"]
 
 [node name="Gramps1" type="Node3D"]
-script = ExtResource("1_xp6p5")
+script = ExtResource("1_i87r0")
 
 [node name="Gramps1" parent="." instance=ExtResource("1_0gun8")]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://tq3j41aryieg"]
 
-[ext_resource type="Script" path="res://Characters/Ponytails1.gd" id="1_3msf2"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_p5qe6"]
 [ext_resource type="PackedScene" uid="uid://d367fhsr360we" path="res://CharacterModels/character-female-b.glb" id="1_sjqxi"]
 
 [node name="Ponytails1" type="Node3D"]
-script = ExtResource("1_3msf2")
+script = ExtResource("1_p5qe6")
 
 [node name="Ponytails1" parent="." instance=ExtResource("1_sjqxi")]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d2at2rhqno2t4"]
 
 [ext_resource type="PackedScene" uid="uid://tqpn18umfm85" path="res://CharacterModels/character-male-a.glb" id="1_louf2"]
-[ext_resource type="Script" path="res://Characters/Nerd2.gd" id="1_qcf55"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_qcf55"]
 
 [node name="Nerd2" type="Node3D"]
 script = ExtResource("1_qcf55")

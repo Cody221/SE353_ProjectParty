@@ -1,12 +1,11 @@
 extends Node3D
 
-@onready var anim = $Cop1/AnimationPlayer
+@onready var characterAnimationPlayerName = "%s/AnimationPlayer"
+@onready var anim = get_node(characterAnimationPlayerName % name)
 
-
-func CharacterSelectAnim() -> void:
+func _CharacterSelectAnim() -> void:
 	#print(get_parent().get_tree().get_current_scene().name)
 	if get_parent().get_tree().get_current_scene().name == "CharacterSelect":
-		
 		anim.play("walk")
 
 
@@ -17,4 +16,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	CharacterSelectAnim()
+	_CharacterSelectAnim()
