@@ -5,8 +5,8 @@ extends Node3D
 @onready var character = $Character
 @onready var characterBody = $Character/CharacterBody3D
 #stats
-var speed
-var health
+var speed = 0
+var health = 0
 
 #signals 
 signal turn_changed(turnStart : bool)

@@ -5,7 +5,7 @@ var rng = RandomNumberGenerator.new()
 func roll20(mod = 0):
 	return rng.randi_range(0, 20) + mod
 
-func roll6(mod = 0):
+func roll6(mod:int = 0):
 	return rng.randi_range(0, 6) + mod
 
 func roll8(mod = 0):
