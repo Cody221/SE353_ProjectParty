@@ -4,7 +4,7 @@ extends Node
 var Players = []
 var playersTurn : int #index of the player whose turn it is
 
-#var 
+var gridMap : GridMap
 
 #managers
 var diceManager : DiceManager
