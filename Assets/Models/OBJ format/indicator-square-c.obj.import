@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ds1qe2g3xm7wd"
+path="res://.godot/imported/indicator-square-c.obj-5b6a8ad1c7b7df2f83dc417fb3c957ea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/indicator-square-c.obj-5b6a8ad1c7b7df2f83dc417fb3c957ea.mesh"]
+
+source_file="res://Assets/Models/OBJ format/indicator-square-c.obj"
+dest_files=["res://.godot/imported/indicator-square-c.obj-5b6a8ad1c7b7df2f83dc417fb3c957ea.mesh", "res://.godot/imported/indicator-square-c.obj-5b6a8ad1c7b7df2f83dc417fb3c957ea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

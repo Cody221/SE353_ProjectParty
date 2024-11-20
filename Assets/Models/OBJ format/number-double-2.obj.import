@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dx1h8fe3awkw7"
+path="res://.godot/imported/number-double-2.obj-ef379d7e8fe419f2d24d6643a7d446fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/number-double-2.obj-ef379d7e8fe419f2d24d6643a7d446fd.mesh"]
+
+source_file="res://Assets/Models/OBJ format/number-double-2.obj"
+dest_files=["res://.godot/imported/number-double-2.obj-ef379d7e8fe419f2d24d6643a7d446fd.mesh", "res://.godot/imported/number-double-2.obj-ef379d7e8fe419f2d24d6643a7d446fd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

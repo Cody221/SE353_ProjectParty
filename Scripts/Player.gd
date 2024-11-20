@@ -29,6 +29,7 @@ var myTurn : bool :
 func _ready():
 	GameManager.Players.append(self)
 	ui.rollButton.pressed.connect(move)
+	ui.passTurnButton.pressed.connect(GameManager.pass_turn)
 	turn_changed.connect(func(turnStart): ui.visible = turnStart)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

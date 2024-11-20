@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvlcjgb8g1wj2"
+path="res://.godot/imported/stairs-diagonal-small.obj-953de7e5e4f70333ee2e88b762a64dca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairs-diagonal-small.obj-953de7e5e4f70333ee2e88b762a64dca.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/stairs-diagonal-small.obj"
+dest_files=["res://.godot/imported/stairs-diagonal-small.obj-953de7e5e4f70333ee2e88b762a64dca.mesh", "res://.godot/imported/stairs-diagonal-small.obj-953de7e5e4f70333ee2e88b762a64dca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

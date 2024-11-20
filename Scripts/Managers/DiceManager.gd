@@ -1,4 +1,4 @@
-class_name DiceManager extends Node
+class_name DiceManager
 
 var rng = RandomNumberGenerator.new()
 

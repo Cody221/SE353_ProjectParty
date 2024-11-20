@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvshkyks5nggs"
+path="res://.godot/imported/floor-thick.obj-4b1f30c4a2b9beda256d217d43dcf437.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor-thick.obj-4b1f30c4a2b9beda256d217d43dcf437.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/floor-thick.obj"
+dest_files=["res://.godot/imported/floor-thick.obj-4b1f30c4a2b9beda256d217d43dcf437.mesh", "res://.godot/imported/floor-thick.obj-4b1f30c4a2b9beda256d217d43dcf437.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://sokyutnevtco"
+path="res://.godot/imported/target-a-square.obj-6d40a7a6fe6a4a1034c6a65e75a8028d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/target-a-square.obj-6d40a7a6fe6a4a1034c6a65e75a8028d.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/target-a-square.obj"
+dest_files=["res://.godot/imported/target-a-square.obj-6d40a7a6fe6a4a1034c6a65e75a8028d.mesh", "res://.godot/imported/target-a-square.obj-6d40a7a6fe6a4a1034c6a65e75a8028d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

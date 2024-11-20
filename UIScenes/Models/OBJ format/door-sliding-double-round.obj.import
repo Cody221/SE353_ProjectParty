@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbt4p2tva703k"
+path="res://.godot/imported/door-sliding-double-round.obj-838cc09c1cc4b6e5e912fbd26f70947d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-sliding-double-round.obj-838cc09c1cc4b6e5e912fbd26f70947d.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/door-sliding-double-round.obj"
+dest_files=["res://.godot/imported/door-sliding-double-round.obj-838cc09c1cc4b6e5e912fbd26f70947d.mesh", "res://.godot/imported/door-sliding-double-round.obj-838cc09c1cc4b6e5e912fbd26f70947d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

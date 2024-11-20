@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://blnh7s3cih8j1"
+path="res://.godot/imported/figurine-large.obj-69d9b257cd09a98b854e6e013a15f1d7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/figurine-large.obj-69d9b257cd09a98b854e6e013a15f1d7.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/figurine-large.obj"
+dest_files=["res://.godot/imported/figurine-large.obj-69d9b257cd09a98b854e6e013a15f1d7.mesh", "res://.godot/imported/figurine-large.obj-69d9b257cd09a98b854e6e013a15f1d7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

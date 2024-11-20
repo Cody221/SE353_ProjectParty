@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bf2yejbmhc51e"
+path="res://.godot/imported/wall-doorway.obj-3a2cbcf1058627d456b0bf26e9305100.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-doorway.obj-3a2cbcf1058627d456b0bf26e9305100.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/wall-doorway.obj"
+dest_files=["res://.godot/imported/wall-doorway.obj-3a2cbcf1058627d456b0bf26e9305100.mesh", "res://.godot/imported/wall-doorway.obj-3a2cbcf1058627d456b0bf26e9305100.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

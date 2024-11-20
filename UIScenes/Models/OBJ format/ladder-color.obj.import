@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bfk36w1u4ucjy"
+path="res://.godot/imported/ladder-color.obj-2f5182d0df91ecb1c82ca1e9bb93d5ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ladder-color.obj-2f5182d0df91ecb1c82ca1e9bb93d5ef.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/ladder-color.obj"
+dest_files=["res://.godot/imported/ladder-color.obj-2f5182d0df91ecb1c82ca1e9bb93d5ef.mesh", "res://.godot/imported/ladder-color.obj-2f5182d0df91ecb1c82ca1e9bb93d5ef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

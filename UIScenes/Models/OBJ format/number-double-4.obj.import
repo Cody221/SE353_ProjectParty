@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bf7lngtoi0xs6"
+path="res://.godot/imported/number-double-4.obj-9f0c89646134bfdaa42b8ff2f9b2a448.mesh"
+
+[deps]
+
+files=["res://.godot/imported/number-double-4.obj-9f0c89646134bfdaa42b8ff2f9b2a448.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/number-double-4.obj"
+dest_files=["res://.godot/imported/number-double-4.obj-9f0c89646134bfdaa42b8ff2f9b2a448.mesh", "res://.godot/imported/number-double-4.obj-9f0c89646134bfdaa42b8ff2f9b2a448.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

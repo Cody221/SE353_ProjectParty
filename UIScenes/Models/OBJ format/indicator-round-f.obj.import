@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6oipfm7hldib"
+path="res://.godot/imported/indicator-round-f.obj-7a90c445f48c6b3c692edec54b52560f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/indicator-round-f.obj-7a90c445f48c6b3c692edec54b52560f.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/indicator-round-f.obj"
+dest_files=["res://.godot/imported/indicator-round-f.obj-7a90c445f48c6b3c692edec54b52560f.mesh", "res://.godot/imported/indicator-round-f.obj-7a90c445f48c6b3c692edec54b52560f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7q08vb0r7k1t"
+path="res://.godot/imported/wall-window-cutout-large.obj-bc2c92e1061f9e358b7e009f01d3e107.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-window-cutout-large.obj-bc2c92e1061f9e358b7e009f01d3e107.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/wall-window-cutout-large.obj"
+dest_files=["res://.godot/imported/wall-window-cutout-large.obj-bc2c92e1061f9e358b7e009f01d3e107.mesh", "res://.godot/imported/wall-window-cutout-large.obj-bc2c92e1061f9e358b7e009f01d3e107.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

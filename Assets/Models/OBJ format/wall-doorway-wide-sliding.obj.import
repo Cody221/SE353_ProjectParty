@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c60wjnu8xcnr3"
+path="res://.godot/imported/wall-doorway-wide-sliding.obj-c0ee0909bfaa4d9b995b9994f491b36c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-doorway-wide-sliding.obj-c0ee0909bfaa4d9b995b9994f491b36c.mesh"]
+
+source_file="res://Assets/Models/OBJ format/wall-doorway-wide-sliding.obj"
+dest_files=["res://.godot/imported/wall-doorway-wide-sliding.obj-c0ee0909bfaa4d9b995b9994f491b36c.mesh", "res://.godot/imported/wall-doorway-wide-sliding.obj-c0ee0909bfaa4d9b995b9994f491b36c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

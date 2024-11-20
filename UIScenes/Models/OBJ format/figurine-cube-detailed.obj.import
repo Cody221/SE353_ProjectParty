@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://byhgrkc53mthc"
+path="res://.godot/imported/figurine-cube-detailed.obj-2cb4d4e5d0ce97f8c1a89fc3dec48e69.mesh"
+
+[deps]
+
+files=["res://.godot/imported/figurine-cube-detailed.obj-2cb4d4e5d0ce97f8c1a89fc3dec48e69.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/figurine-cube-detailed.obj"
+dest_files=["res://.godot/imported/figurine-cube-detailed.obj-2cb4d4e5d0ce97f8c1a89fc3dec48e69.mesh", "res://.godot/imported/figurine-cube-detailed.obj-2cb4d4e5d0ce97f8c1a89fc3dec48e69.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
