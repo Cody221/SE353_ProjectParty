@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ct8n1ixgjjx2j"
+path="res://.godot/imported/wall-window-medium.obj-93667de8ea03c3e92c48e3f938568b98.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-window-medium.obj-93667de8ea03c3e92c48e3f938568b98.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/wall-window-medium.obj"
+dest_files=["res://.godot/imported/wall-window-medium.obj-93667de8ea03c3e92c48e3f938568b98.mesh", "res://.godot/imported/wall-window-medium.obj-93667de8ea03c3e92c48e3f938568b98.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

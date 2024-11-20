@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkolknir6c6u"
+path="res://.godot/imported/shape-cube-half.obj-f9de9b93bf110170e3d479a77e8b7a49.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shape-cube-half.obj-f9de9b93bf110170e3d479a77e8b7a49.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/shape-cube-half.obj"
+dest_files=["res://.godot/imported/shape-cube-half.obj-f9de9b93bf110170e3d479a77e8b7a49.mesh", "res://.godot/imported/shape-cube-half.obj-f9de9b93bf110170e3d479a77e8b7a49.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

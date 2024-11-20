@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://co3vigwvsd2s1"
+path="res://.godot/imported/number-3.obj-428d8fb7ee281708c7f4d2cf6f60f9bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/number-3.obj-428d8fb7ee281708c7f4d2cf6f60f9bb.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/number-3.obj"
+dest_files=["res://.godot/imported/number-3.obj-428d8fb7ee281708c7f4d2cf6f60f9bb.mesh", "res://.godot/imported/number-3.obj-428d8fb7ee281708c7f4d2cf6f60f9bb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

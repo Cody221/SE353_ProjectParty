@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bv8y350ua0o6b"
+path="res://.godot/imported/shape-triangular-prism.obj-96e79a8053ad565450fc1d5ec5ee6adb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shape-triangular-prism.obj-96e79a8053ad565450fc1d5ec5ee6adb.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/shape-triangular-prism.obj"
+dest_files=["res://.godot/imported/shape-triangular-prism.obj-96e79a8053ad565450fc1d5ec5ee6adb.mesh", "res://.godot/imported/shape-triangular-prism.obj-96e79a8053ad565450fc1d5ec5ee6adb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

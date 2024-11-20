@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkkumelg5mp1u"]
+
+[ext_resource type="PackedScene" uid="uid://bdr3somgesf2n" path="res://UIScenes/CharacterSelectUI.tscn" id="1_b66jb"]
+[ext_resource type="Script" path="res://WorldScenes/CharacterSelectScript.gd" id="1_fltjs"]
+
+[node name="CharacterSelect" type="Node3D"]
+script = ExtResource("1_fltjs")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.991445, 0.130526, 0, -0.130526, 0.991445, 0, 0.75, 2)
+fov = 45.0
+
+[node name="Control" parent="Camera3D" instance=ExtResource("1_b66jb")]
+
+[node name="SpotLight" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.929307, 0.369309, 0, -0.369309, 0.929307, 0, 1.14723, 1.7065)
+
+[node name="Background" type="StaticBody3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.13768)
+size = Vector3(5, 5, 1)
+
+[connection signal="listIndex" from="Camera3D/Control" to="." method="_on_control_list_index"]

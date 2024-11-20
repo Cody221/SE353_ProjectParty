@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://45s3bf6fn6tk"
+path="res://.godot/imported/wall-round.obj-89bb79588d29f9dd6b25d4f07132d08a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-round.obj-89bb79588d29f9dd6b25d4f07132d08a.mesh"]
+
+source_file="res://Assets/Models/OBJ format/wall-round.obj"
+dest_files=["res://.godot/imported/wall-round.obj-89bb79588d29f9dd6b25d4f07132d08a.mesh", "res://.godot/imported/wall-round.obj-89bb79588d29f9dd6b25d4f07132d08a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

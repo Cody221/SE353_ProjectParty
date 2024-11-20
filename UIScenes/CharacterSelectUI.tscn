@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdr3somgesf2n"]
+
+[ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="1_8xa0u"]
+[ext_resource type="Script" path="res://UIScenes/CharacterSelect.gd" id="2_ble2q"]
+
+[sub_resource type="Theme" id="Theme_jftq6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8xa0u")
+script = ExtResource("2_ble2q")
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 215.0
+offset_right = 303.0
+offset_bottom = 400.0
+theme = SubResource("Theme_jftq6")
+item_count = 8
+item_0/text = "Character1"
+item_1/text = "Character2"
+item_2/text = "Character3"
+item_3/text = "Character4"
+item_4/text = "Character5"
+item_5/text = "Character6"
+item_6/text = "Character7"
+item_7/text = "Character8"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 972.0
+offset_top = 514.0
+offset_right = 1098.0
+offset_bottom = 604.0
+text = "Confirm"
+
+[connection signal="item_selected" from="ItemList" to="." method="_on_item_list_item_selected"]

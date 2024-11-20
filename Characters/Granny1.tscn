@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b58ui48tdts1d"]
+
+[ext_resource type="PackedScene" uid="uid://cnys3e4t64wcn" path="res://CharacterModels/character-female-c.glb" id="1_22s1a"]
+[ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_yeksk"]
+
+[node name="Granny1" type="Node3D"]
+script = ExtResource("1_yeksk")
+
+[node name="Granny1" parent="." instance=ExtResource("1_22s1a")]

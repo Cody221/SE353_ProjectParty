@@ -11,13 +11,22 @@ config_version=5
 [application]
 
 config/name="Project Party"
-run/main_scene="res://Scenes/TestScene.tscn"
+run/main_scene="res://WorldScenes/TestScene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://Scripts/Managers/GameManager.gd"
+MPIO="*res://addons/MultiplayCore/MPIO.gd"
+
+[debug]
+
+file_logging/enable_file_logging=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/MultiplayCore/plugin.cfg", "res://addons/script-ide/plugin.cfg")
 
 [input]
 
@@ -49,4 +58,4 @@ Right={
 
 [layer_names]
 
-3d_physics/layer_2="Selectable"
+3d_physics/layer_2="Player"

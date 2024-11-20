@@ -1,0 +1,30 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://tga6pd2diroq"]
+
+[sub_resource type="SystemFont" id="SystemFont_flsio"]
+font_names = PackedStringArray("Comic Sans MS")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u6v10"]
+bg_color = Color(0.580859, 0.463523, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+
+[sub_resource type="SystemFont" id="SystemFont_khhtj"]
+font_names = PackedStringArray("Comic Sans MS")
+
+[sub_resource type="SystemFont" id="SystemFont_xdikb"]
+font_names = PackedStringArray("Comic Sans MS")
+font_weight = 999
+
+[resource]
+Button/font_sizes/font_size = 24
+Button/fonts/font = SubResource("SystemFont_flsio")
+Button/styles/hover = SubResource("StyleBoxFlat_u6v10")
+ItemList/font_sizes/font_size = 12
+ItemList/fonts/font = SubResource("SystemFont_khhtj")
+ItemList/styles/hovered = SubResource("StyleBoxFlat_u6v10")
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/bold_font = null
+RichTextLabel/fonts/normal_font = SubResource("SystemFont_xdikb")

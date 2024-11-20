@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c4d3148d1xuaw"
+path="res://.godot/imported/shape-hexagon-half.obj-40bb7f5ff7ee988192d36835522352fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shape-hexagon-half.obj-40bb7f5ff7ee988192d36835522352fc.mesh"]
+
+source_file="res://UIScenes/Models/OBJ format/shape-hexagon-half.obj"
+dest_files=["res://.godot/imported/shape-hexagon-half.obj-40bb7f5ff7ee988192d36835522352fc.mesh", "res://.godot/imported/shape-hexagon-half.obj-40bb7f5ff7ee988192d36835522352fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

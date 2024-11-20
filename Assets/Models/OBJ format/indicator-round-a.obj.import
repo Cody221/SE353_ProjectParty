@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://nfxmimos4k8a"
+path="res://.godot/imported/indicator-round-a.obj-49b98003b6e2efca78b7ecef83b8f9ed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/indicator-round-a.obj-49b98003b6e2efca78b7ecef83b8f9ed.mesh"]
+
+source_file="res://Assets/Models/OBJ format/indicator-round-a.obj"
+dest_files=["res://.godot/imported/indicator-round-a.obj-49b98003b6e2efca78b7ecef83b8f9ed.mesh", "res://.godot/imported/indicator-round-a.obj-49b98003b6e2efca78b7ecef83b8f9ed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
