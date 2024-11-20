@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bd5lcqim4a6hv"
-path="res://.godot/imported/figurine.glb-3874a2dab34ff62d573d818cff41bfec.scn"
+uid="uid://b4omafwp0p40h"
+path="res://.godot/imported/aid-defibrillator-red.glb-0537253eabdbf372520e676c9343cb54.scn"
 
 [deps]
 
-source_file="res://Assets/Models/figurine.glb"
-dest_files=["res://.godot/imported/figurine.glb-3874a2dab34ff62d573d818cff41bfec.scn"]
+source_file="res://CharacterModels/aid-defibrillator-red.glb"
+dest_files=["res://.godot/imported/aid-defibrillator-red.glb-0537253eabdbf372520e676c9343cb54.scn"]
 
 [params]
 

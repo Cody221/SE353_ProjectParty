@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bd5lcqim4a6hv"
-path="res://.godot/imported/figurine.glb-3874a2dab34ff62d573d818cff41bfec.scn"
+uid="uid://cjvph534fdg21"
+path="res://.godot/imported/aid_hearing.glb-0cd19db0dfb086eff06bfa57eb71728b.scn"
 
 [deps]
 
-source_file="res://Assets/Models/figurine.glb"
-dest_files=["res://.godot/imported/figurine.glb-3874a2dab34ff62d573d818cff41bfec.scn"]
+source_file="res://CharacterModels/aid_hearing.glb"
+dest_files=["res://.godot/imported/aid_hearing.glb-0cd19db0dfb086eff06bfa57eb71728b.scn"]
 
 [params]
 
