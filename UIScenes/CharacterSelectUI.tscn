@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdr3somgesf2n"]
+[gd_scene load_steps=6 format=3 uid="uid://bdr3somgesf2n"]
 
 [ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="1_8xa0u"]
 [ext_resource type="Script" path="res://Scripts/UI/CharacterSelect.gd" id="2_ble2q"]
 [ext_resource type="Script" path="res://Scripts/UI/CharacterSelectUIConfirmButton.gd" id="3_xhwqh"]
+[ext_resource type="Script" path="res://UIScenes/Start_Game_Button.gd" id="4_6jtv3"]
 
 [sub_resource type="Theme" id="Theme_jftq6"]
 
@@ -18,10 +19,10 @@ script = ExtResource("2_ble2q")
 
 [node name="ItemList" type="ItemList" parent="."]
 layout_mode = 0
-offset_left = 148.0
-offset_top = 215.0
-offset_right = 303.0
-offset_bottom = 400.0
+offset_left = 1458.0
+offset_top = 327.0
+offset_right = 1613.0
+offset_bottom = 512.0
 theme = SubResource("Theme_jftq6")
 item_count = 8
 item_0/text = "Character1"
@@ -35,10 +36,10 @@ item_7/text = "Character8"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 972.0
-offset_top = 514.0
-offset_right = 1098.0
-offset_bottom = 604.0
+offset_left = 1474.0
+offset_top = 749.0
+offset_right = 1582.0
+offset_bottom = 845.0
 text = "Confirm"
 script = ExtResource("3_xhwqh")
 
@@ -57,5 +58,14 @@ offset_right = 1602.0
 offset_bottom = 766.0
 theme = ExtResource("1_8xa0u")
 text = "Please Wait for Other Players"
+
+[node name="Start_Game" type="Button" parent="."]
+visible = false
+offset_left = 1475.0
+offset_top = 749.0
+offset_right = 1583.0
+offset_bottom = 845.0
+text = "Start"
+script = ExtResource("4_6jtv3")
 
 [connection signal="item_selected" from="ItemList" to="." method="_on_item_list_item_selected"]
