@@ -3,7 +3,34 @@
 [ext_resource type="PackedScene" uid="uid://cwtgq0a34uf3w" path="res://WorldScenes/TestScene.tscn" id="1_bu6nt"]
 [ext_resource type="Script" path="res://WorldScenes/LobbyDoStuff.gd" id="1_g4q7c"]
 
-[node name="Node" type="Node"]
+[node name="Node" type="Control" node_paths=PackedStringArray("host_btn", "join_btn", "button_layout")]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_g4q7c")
+host_btn = NodePath("Buttons/Host")
+join_btn = NodePath("Buttons/HBoxContainer/Join")
+button_layout = NodePath("Buttons/HBoxContainer")
 
 [node name="SceneRoot" parent="." instance=ExtResource("1_bu6nt")]
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+layout_mode = 0
+theme_override_constants/separation = 8
+
+[node name="Host" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "Host"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons"]
+layout_mode = 2
+
+[node name="Address" type="LineEdit" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "127.0.0.1:4200"
+placeholder_text = "Address"
+
+[node name="Join" type="Button" parent="Buttons/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+text = "Join"
