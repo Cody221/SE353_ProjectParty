@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhraletaajhj"]
+[gd_scene load_steps=4 format=3 uid="uid://dhraletaajhj"]
 
 [ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="1_vyajh"]
-[ext_resource type="Script" path="res://UIScenes/PlayGameButton.gd" id="2_p2h12"]
+[ext_resource type="Script" path="res://Scripts/UI/MainMenu/PlayGameButton.gd" id="2_5wxio"]
+[ext_resource type="Script" path="res://Scripts/UI/MainMenu/MainMenuExitButton.gd" id="3_yuqx3"]
 
 [node name="Control" type="Control"]
 clip_contents = true
 layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -39,7 +41,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 10
 text = "Play Game"
-script = ExtResource("2_p2h12")
+script = ExtResource("2_5wxio")
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 360)
@@ -65,3 +67,4 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 2
 text = "Quit"
+script = ExtResource("3_yuqx3")

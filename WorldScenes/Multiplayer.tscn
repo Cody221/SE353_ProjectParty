@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://1lxe4lpcm3nl"]
+
+[ext_resource type="Script" path="res://addons/MultiplayCore/MultiPlay.gd" id="1_x5kbx"]
+[ext_resource type="Script" path="res://addons/MultiplayCore/net_protocols/ENetProtocol.gd" id="2_6wn08"]
+
+[node name="MultiPlayCore" type="Node"]
+script = ExtResource("1_x5kbx")
+
+[node name="ENetProtocol" type="Node" parent="."]
+script = ExtResource("2_6wn08")

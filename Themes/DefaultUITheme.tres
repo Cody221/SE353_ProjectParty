@@ -25,6 +25,7 @@ Button/styles/hover = SubResource("StyleBoxFlat_u6v10")
 ItemList/font_sizes/font_size = 12
 ItemList/fonts/font = SubResource("SystemFont_khhtj")
 ItemList/styles/hovered = SubResource("StyleBoxFlat_u6v10")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
 RichTextLabel/font_sizes/normal_font_size = 48
 RichTextLabel/fonts/bold_font = null
 RichTextLabel/fonts/normal_font = SubResource("SystemFont_xdikb")

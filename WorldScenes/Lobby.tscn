@@ -1,15 +1,45 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfoy5uidk45rv"]
 
 [ext_resource type="PackedScene" uid="uid://cwtgq0a34uf3w" path="res://WorldScenes/TestScene.tscn" id="1_bu6nt"]
-[ext_resource type="Script" path="res://addons/MultiplayCore/MultiPlay.gd" id="2_2i7eu"]
-[ext_resource type="Script" path="res://addons/MultiplayCore/net_protocols/ENetProtocol.gd" id="3_oulrk"]
+[ext_resource type="Script" path="res://WorldScenes/LobbyDoStuff.gd" id="1_g4q7c"]
+[ext_resource type="Theme" uid="uid://tga6pd2diroq" path="res://Themes/DefaultUITheme.tres" id="3_ygvnh"]
 
-[node name="Node" type="Node"]
+[node name="Node" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.224
+offset_right = -1920.0
+offset_bottom = -1321.92
+script = ExtResource("1_g4q7c")
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 858.0
+offset_top = 561.0
+offset_right = 1123.0
+offset_bottom = 653.0
+theme_override_constants/separation = 8
+
+[node name="Host" type="Button" parent="Buttons"]
+layout_mode = 2
+theme = ExtResource("3_ygvnh")
+text = "Host"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons"]
+layout_mode = 2
+
+[node name="Address" type="LineEdit" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("3_ygvnh")
+text = "127.0.0.1:4200"
+placeholder_text = "Address"
+
+[node name="Join" type="Button" parent="Buttons/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme = ExtResource("3_ygvnh")
+text = "Join"
 
 [node name="SceneRoot" parent="." instance=ExtResource("1_bu6nt")]
-
-[node name="MultiPlayCore" type="Node" parent="."]
-script = ExtResource("2_2i7eu")
-
-[node name="ENetProtocol" type="Node" parent="MultiPlayCore"]
-script = ExtResource("3_oulrk")

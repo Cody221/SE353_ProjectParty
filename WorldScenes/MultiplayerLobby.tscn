@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://co06ew74alx1s"]
+
+[ext_resource type="PackedScene" uid="uid://cc6uat4txtjws" path="res://WorldScenes/BaseGridMap.tscn" id="1_l8niy"]
+
+[node name="MultiplayerLobby" type="Node3D"]
+
+[node name="GridMap" parent="." instance=ExtResource("1_l8niy")]
+data = {
+"cells": PackedInt32Array(65533, 65533, 1441792, 65533, 65535, 1, 65533, 65534, 1, 65534, 65533, 1, 1, 65534, 1, 65535, 65535, 655361, 65533, 2, 0, 65533, 1, 1, 65533, 0, 1, 65534, 2, 1, 1, 2, 1, 0, 2, 1, 65535, 0, 655361, 1, 65535, 655361, 1, 0, 655361, 1, 1, 1, 0, 1, 655361, 65535, 2, 1, 65535, 65534, 655361, 0, 65534, 655361, 0, 65535, 655361, 0, 0, 655361, 65535, 1, 655361, 65534, 1, 1, 65534, 0, 1, 65534, 65535, 655361, 65534, 65534, 1, 65535, 65533, 1, 0, 65533, 1, 1, 65533, 1, 2, 65533, 655360, 2, 65534, 1, 2, 65535, 1, 2, 2, 1048576, 2, 1, 1, 2, 0, 1048577)
+}
+metadata/_editor_floor_ = Vector3(0, -1, 0)
