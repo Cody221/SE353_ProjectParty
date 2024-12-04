@@ -13,8 +13,8 @@ func _ready() -> void:
 
 func _buttonPressed():
 	print("Freddy that is yellow")
-	if (MPIO.get_child(0).is_server):
-		startButton.visible = true
+
+	startButton.visible = true
 	colorRect.visible = true
 	label.visible = true
 	

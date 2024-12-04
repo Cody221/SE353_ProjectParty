@@ -1,7 +1,7 @@
 extends Node
 
 # Assign this variable to MPAuth node
-@export var auth: MPAuth
+#@export var auth: MPAuth
 
 signal listIndex(index)
 

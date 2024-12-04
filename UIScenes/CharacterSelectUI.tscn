@@ -61,6 +61,7 @@ text = "Please Wait for Other Players"
 
 [node name="Start_Game" type="Button" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 1475.0
 offset_top = 749.0
 offset_right = 1583.0

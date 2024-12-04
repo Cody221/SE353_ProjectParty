@@ -12,6 +12,6 @@ func _process(delta: float) -> void:
 	
 func _buttonPressed():
 	print("Bahnie the Bunny")
-	
-	MPIO.mpc.load_scene("res://WorldScenes/DefaultWorld.tscn", true)
+	GameManager.load_scene("res://WorldScenes/DefaultWorld.tscn")
+	#MPIO.mpc.load_scene("res://WorldScenes/DefaultWorld.tscn", true)
 	#print(get_parent().get_parent().name)

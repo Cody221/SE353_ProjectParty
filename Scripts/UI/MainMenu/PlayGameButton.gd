@@ -7,5 +7,5 @@ func _ready() -> void:
 
 func _buttonPressed():
 	print("Freddy Fivebear")
-	GameManager.load_scene("res://WorldScenes/Lobby.tscn")
+	GameManager.load_scene("res://WorldScenes/CharacterSelectStage.tscn")
 	
