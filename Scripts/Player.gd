@@ -35,16 +35,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	#var localPos = GameManager.gridMap.to_local(position)
-	#gridPosition = GameManager.gridMap.local_to_map(localPos)
-	#position = GameManager.gridMap.map_to_local(gridPosition)
 	pass
 	
 
 func move():
 	var moveAmount = GameManager.diceManager.roll6(speed)
 	ui.rollLabel.text = "Roll: %s" % moveAmount
-	var validTiles = GameManager.gridMap.get_valid_tiles(gridPosition, moveAmount)
 	awaitingChoice = true
 	while awaitingChoice:
 		var tilePosition = await tile_chosen
