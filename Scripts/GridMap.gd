@@ -1,14 +1,35 @@
 extends GridMap
 
-func _ready():
-	GameManager.gridMap = self
-
 var directions = [
 	Vector3i(1, 0, 0),
 	Vector3i(-1, 0, 0),
 	Vector3i(0, 0, 1),
 	Vector3i(0, 0, -1),
 ]
+
+func _ready():
+	GameManager.gridMap = self
+
+func get_valid_tiles(origin : Vector3i, moveDistance : int):
+	var validTiles = []
+	var usedCells = get_used_cells()
+	for cell in usedCells:
+		var distanceX = abs(origin.x - cell.x)
+		var distanceZ = abs(origin.z - cell.z)
+		
+		if ((distanceX + distanceZ <= moveDistance) and (cell != origin)):
+			validTiles.append(cell)
+	
+	for tile in validTiles:
+		if a_star(origin, tile, moveDistance) == false:
+			validTiles.erase(tile)
+	
+	return validTiles
+
+func paint_tiles(tiles, index):
+	for tile in tiles:
+		set_cell_item(tile, index)
+
 
 func a_star(origin : Vector3i, goal : Vector3i, moveDistance: int):
 	var openList = [origin] #nodes to check 

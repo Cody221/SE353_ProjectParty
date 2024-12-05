@@ -41,6 +41,8 @@ func _process(_delta):
 func move():
 	var moveAmount = GameManager.diceManager.roll6(speed)
 	ui.rollLabel.text = "Roll: %s" % moveAmount
+	var valids = GameManager.gridMap.get_valid_tiles(gridPosition, moveAmount)
+	GameManager.gridMap.paint_tiles(valids, 0)
 	awaitingChoice = true
 	while awaitingChoice:
 		var tilePosition = await tile_chosen
@@ -48,7 +50,7 @@ func move():
 			gridPosition = tilePosition
 			cam.position = Vector3(0, cam.position.y, 2)
 			position = GameManager.gridMap.map_to_local(gridPosition)
-			
+			GameManager.gridMap.paint_tiles(valids, 2)
 			awaitingChoice = false
 			ui.rollLabel.text = "Roll: " 
 		
