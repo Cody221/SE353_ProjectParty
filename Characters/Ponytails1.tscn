@@ -1,9 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://tq3j41aryieg"]
+[gd_scene load_steps=4 format=3 uid="uid://tq3j41aryieg"]
 
 [ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_p5qe6"]
 [ext_resource type="PackedScene" uid="uid://d367fhsr360we" path="res://CharacterModels/character-female-b.glb" id="1_sjqxi"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xgcl7"]
+height = 1.0
 
 [node name="Ponytails1" type="Node3D"]
 script = ExtResource("1_p5qe6")
 
 [node name="Ponytails1" parent="." instance=ExtResource("1_sjqxi")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.467591, 0)
+shape = SubResource("CapsuleShape3D_xgcl7")

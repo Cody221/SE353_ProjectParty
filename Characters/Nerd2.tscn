@@ -1,9 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2at2rhqno2t4"]
+[gd_scene load_steps=4 format=3 uid="uid://d2at2rhqno2t4"]
 
 [ext_resource type="PackedScene" uid="uid://tqpn18umfm85" path="res://CharacterModels/character-male-a.glb" id="1_louf2"]
 [ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_qcf55"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fyebg"]
+height = 1.0
 
 [node name="Nerd2" type="Node3D"]
 script = ExtResource("1_qcf55")
 
 [node name="Nerd2" parent="." instance=ExtResource("1_louf2")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.467591, 0)
+shape = SubResource("CapsuleShape3D_fyebg")

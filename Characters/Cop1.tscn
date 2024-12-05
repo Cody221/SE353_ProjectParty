@@ -1,9 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://d04sd7edrchr3"]
+[gd_scene load_steps=4 format=3 uid="uid://d04sd7edrchr3"]
 
 [ext_resource type="PackedScene" uid="uid://bx631dhkk0m6t" path="res://CharacterModels/character-male-c.glb" id="1_cmkfd"]
 [ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_oltxe"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cc743"]
+height = 1.0
 
 [node name="Cop1" type="Node3D"]
 script = ExtResource("1_oltxe")
 
 [node name="Cop1" parent="." instance=ExtResource("1_cmkfd")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.467591, 0)
+shape = SubResource("CapsuleShape3D_cc743")

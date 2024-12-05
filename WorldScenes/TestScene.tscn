@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwtgq0a34uf3w"]
 
 [ext_resource type="Script" path="res://Scripts/MigratePlayer.gd" id="1_egxmv"]
-[ext_resource type="MeshLibrary" uid="uid://ccf7w05q4prsa" path="res://awesomeMeshLibrary.tres" id="2_pchqo"]
+[ext_resource type="MeshLibrary" uid="uid://bbsy27tubjbcu" path="res://awesomeMeshLibrary.tres" id="2_pchqo"]
 [ext_resource type="PackedScene" uid="uid://b0wfglqitf4g6" path="res://WorldScenes/Player.tscn" id="2_q7wq2"]
 [ext_resource type="Script" path="res://Scripts/GridMap.gd" id="2_ywewv"]
 
