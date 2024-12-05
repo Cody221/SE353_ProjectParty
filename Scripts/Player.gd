@@ -58,9 +58,9 @@ func move():
 			var localPos = GameManager.gridMap.to_local(position)
 			gridPosition = GameManager.gridMap.local_to_map(localPos)
 			position = GameManager.gridMap.map_to_local(gridPosition)
-			if (position.x > 0.45):
+			if (position.x > 0.50):
 				position = Vector3(position.x + 1, position.y, position.z)
-			if position.z > 0.45:
+			if position.z > 0.51:
 				position = Vector3(position.x, position.y, position.z + 1)
 						
 			
