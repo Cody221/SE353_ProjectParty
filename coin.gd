@@ -5,20 +5,18 @@ extends MeshInstance3D
 
 func _ready():
 	area.body_entered.connect(collision)
-	print("Joe mama")
 	shadow.position = position - Vector3(0, 5, 0)
 
 func _process(delta):
+	#while area.overlaps_body():
 	position -= Vector3(0, 1, 0) * delta
 	
 
 func collision(collider):
-	print(collider.name)
 	if collider.get_class() == "CharacterBody3D":
 		collider.get_parent().score()
 		#GameManager.miniGame.
 	elif collider.get_class() == "GridMap":
-		print("touched grid")
-	print('destroyed')
+		pass
 	queue_free()
 	#print("touched", collider.get_class())

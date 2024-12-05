@@ -4,8 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_i87r0"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rma1s"]
-radius = 0.25
-height = 0.7
+height = 1.0
 
 [node name="Gramps1" type="Node3D"]
 script = ExtResource("1_i87r0")
@@ -16,5 +15,5 @@ script = ExtResource("1_i87r0")
 collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.505729, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.467591, 0)
 shape = SubResource("CapsuleShape3D_rma1s")

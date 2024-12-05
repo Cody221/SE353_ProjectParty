@@ -49,6 +49,7 @@ func move():
 		var tilePosition = await tile_chosen
 		print(position)
 		if tilePosition in validTiles:
+			print(tilePosition)
 			position = tilePosition
 			print(tilePosition)
 			print(position)
