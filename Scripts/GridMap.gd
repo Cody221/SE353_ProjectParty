@@ -2,6 +2,7 @@ extends GridMap
 
 func _ready():
 	GameManager.gridMap = self
+	print(get_meshes())
 
 #returns list of valid tiles in the given distance
 func get_valid_tiles(origin : Vector3i, moveDistance : int):

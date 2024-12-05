@@ -18,8 +18,7 @@ func _process(delta: float) -> void:
 
 func _on_control_list_index(index: Variant) -> void:
 	var scene = load(chractersDict[index]).instantiate()
-	add_child(scene)
 	if CurrentCharacter != null:
 		CurrentCharacter.queue_free()
 	CurrentCharacter = scene
-	pass # Replace with function body.
+	GameManager.add_child(CurrentCharacter)

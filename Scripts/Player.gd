@@ -4,6 +4,7 @@ extends Node3D
 @onready var cam = $Camera3D
 @onready var character = $Character
 @onready var characterBody = $Character/CharacterBody3D
+@onready var rollText = $UI/MarginContainer/VBoxContainer2/RichTextLabel
 #stats
 var speed : int = 0
 var health : int = 0
@@ -40,6 +41,7 @@ func _process(_delta):
 
 func move():
 	var moveAmount = GameManager.diceManager.roll6(speed)
+	rollText.text = "Roll: %s" % moveAmount
 	print(moveAmount)
 	var validTiles = GameManager.gridMap.get_valid_tiles(gridPosition, moveAmount)
 	awaitingChoice = true

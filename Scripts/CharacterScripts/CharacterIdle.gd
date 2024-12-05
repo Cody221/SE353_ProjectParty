@@ -1,5 +1,8 @@
 extends Node3D
 
+var nameOfScene
+var idle = true
+
 @onready var characterAnimationPlayerName = "%s/AnimationPlayer"
 @onready var animationPlayer = get_node(characterAnimationPlayerName % name)
 @export var moveSpeed = 0
@@ -7,9 +10,10 @@ var playerScore = 0
 
 
 func _CharacterSelectAnim() -> void:
-	#print(get_parent().get_tree().get_current_scene().name)
-	if get_parent().get_tree().get_current_scene().name == "CharacterSelect":
-		animationPlayer.play("walk")
+	if idle:
+		anim.play("walk")
+	
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
