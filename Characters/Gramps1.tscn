@@ -1,9 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://bq3h077jslc2c"]
+[gd_scene load_steps=4 format=3 uid="uid://bq3h077jslc2c"]
 
 [ext_resource type="PackedScene" uid="uid://cc5tvogx0buru" path="res://CharacterModels/character-male-b.glb" id="1_0gun8"]
 [ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_i87r0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rma1s"]
+radius = 0.25
+height = 0.7
 
 [node name="Gramps1" type="Node3D"]
 script = ExtResource("1_i87r0")
 
 [node name="Gramps1" parent="." instance=ExtResource("1_0gun8")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.505729, 0)
+shape = SubResource("CapsuleShape3D_rma1s")
