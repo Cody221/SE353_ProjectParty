@@ -40,7 +40,7 @@ func _ready():
 func _process(_delta):
 	if rollCounter >= 4:
 		print(get_child(4).playerScore)
-		if get_child(4).playerScore >= 1:
+		if get_child(4).playerScore >= 6:
 				get_child(4).queue_free()
 				get_child(2).visible = true
 				rollCounter = 0

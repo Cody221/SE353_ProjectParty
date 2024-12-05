@@ -1,9 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cl66b30uei43t"]
+[gd_scene load_steps=10 format=3 uid="uid://cy3o8kmww8vtj"]
 
 [ext_resource type="Script" path="res://coin_collector.gd" id="1_cg2xo"]
 [ext_resource type="Texture2D" uid="uid://d3cwcxnuiqe2k" path="res://Assets/Sky/Sky_2.png" id="1_oumjc"]
 [ext_resource type="PackedScene" uid="uid://bq3h077jslc2c" path="res://Characters/Gramps1.tscn" id="2_fih1x"]
-[ext_resource type="MeshLibrary" uid="uid://r5g0frtbhbr5" path="res://Assets/the_mesh_library.tres" id="4_kf772"]
+[ext_resource type="MeshLibrary" uid="uid://baemx8mgi02n" path="res://Assets/the_mesh_library.tres" id="4_kf772"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7kcf8"]
 panorama = ExtResource("1_oumjc")
