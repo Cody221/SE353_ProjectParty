@@ -35,21 +35,35 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	var localPos = GameManager.gridMap.to_local(position)
-	gridPosition = GameManager.gridMap.local_to_map(localPos)
-	position = GameManager.gridMap.map_to_local(gridPosition)
+	pass
+	
 
 func move():
 	var moveAmount = GameManager.diceManager.roll6(speed)
 	rollText.text = "Roll: %s" % moveAmount
-	print(moveAmount)
+	#print(moveAmount)
 	var validTiles = GameManager.gridMap.get_valid_tiles(gridPosition, moveAmount)
+	#print(validTiles)
 	awaitingChoice = true
 	while awaitingChoice:
 		var tilePosition = await tile_chosen
+		print(position)
 		if tilePosition in validTiles:
 			position = tilePosition
+			print(tilePosition)
+			print(position)
 			cam.position = Vector3(0, cam.position.y, 2)
+			#Move Player
+			var localPos = GameManager.gridMap.to_local(position)
+			gridPosition = GameManager.gridMap.local_to_map(localPos)
+			position = GameManager.gridMap.map_to_local(gridPosition)
+			if (position.x > 0.45):
+				position = Vector3(position.x + 1, position.y, position.z)
+			if position.z > 0.45:
+				position = Vector3(position.x, position.y, position.z + 1)
+						
+			
+			
 			awaitingChoice = false
 
 func _input(event):
@@ -75,6 +89,8 @@ func raycast_from_mouse(collisionMask, rayLength):
 	
 	var res = space.intersect_ray(query)
 	if res:
+		print("hit")
 		return res
 	else:
+		print("not")
 		return null
