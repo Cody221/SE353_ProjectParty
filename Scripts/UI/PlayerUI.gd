@@ -2,6 +2,7 @@ extends Control
 
 @onready var rollButton = $MarginContainer/HBoxContainer/VBoxContainer/RollButton
 @onready var passTurnButton = $MarginContainer/HBoxContainer/VBoxContainer/PassTurnButton
+@onready var rollLabel = $MarginContainer/VBoxContainer2/RichTextLabel
 
 func _ready():
 	pass
