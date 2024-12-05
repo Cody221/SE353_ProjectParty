@@ -32,6 +32,8 @@ func _ready():
 	ui.rollButton.pressed.connect(move)
 	ui.passTurnButton.pressed.connect(GameManager.pass_turn)
 	turn_changed.connect(func(turnStart): ui.visible = turnStart)
+	ui.quitButton.pressed.connect(get_tree().quit)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

@@ -36,4 +36,6 @@ func load_scene(path:String):
 	get_tree().change_scene_to_file(path)
 
 func end_game():
-	get_tree().quit()
+	
+	Players[0].ui.endScreen.visible = true
+	
