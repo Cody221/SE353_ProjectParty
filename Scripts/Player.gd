@@ -9,6 +9,7 @@ extends Node3D
 var speed : int = 0
 var health : int = 0
 var gridPosition : Vector3i
+var rollCounter = 0
 
 #signals 
 signal turn_changed(turnStart : bool)
@@ -37,6 +38,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	if rollCounter >= 4:
+		print(get_child(4).playerScore)
+		if get_child(4).playerScore >= 1:
+				get_child(4).queue_free()
+				get_child(2).visible = true
+				rollCounter = 0
+				
 	pass
 	
 
@@ -46,6 +54,7 @@ func move():
 	var valids = GameManager.gridMap.get_valid_tiles(gridPosition, moveAmount)
 	GameManager.gridMap.paint_tiles(valids, 0)
 	awaitingChoice = true
+	rollCounter += 1
 	while awaitingChoice:
 		var tilePosition = await tile_chosen
 		if GameManager.gridMap.a_star(gridPosition, tilePosition, moveAmount):
@@ -56,13 +65,13 @@ func move():
 			awaitingChoice = false
 			ui.rollLabel.text = "Roll: " 
 		
-		#if tilePosition in validTiles:
-			#gridPosition = tilePosition
-			#cam.position = Vector3(0, cam.position.y, 2)
-			#position = GameManager.gridMap.map_to_local(gridPosition)
-			#
-			#awaitingChoice = false
-			#ui.rollLabel.text = "Roll: " 
+	if rollCounter >= 3:
+		var scene = load("res://CoinCollector.tscn").instantiate()
+		add_child(scene)
+		self.get_child(2).visible = false
+		rollCounter += 1
+		
+		
 
 func _input(event):
 	if event.is_action_released("Select") and awaitingChoice == true:

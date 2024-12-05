@@ -29,22 +29,22 @@ func handle_input(delta):
 		var movement = Vector3.ZERO
 		if Input.is_action_pressed("Forward"):
 			if position.z <= 4.5 and position.z >= -4.5:
-				movement = Vector3(-movement.x, 0, -1)
+				movement = Vector3(-movement.x, 0, -1.5)
 				animationPlayer.play("walk")
 		
 		if Input.is_action_pressed("Backward"):
 			if position.z <= 4.5 and position.z >= -4.5:
-				movement = Vector3(movement.x, 0, 1)
+				movement = Vector3(movement.x, 0, 1.5)
 				animationPlayer.play("walk")
 
 		if Input.is_action_pressed("Left"):
 			if position.x <= 4.5 and position.x >= -4.5:
-				movement = Vector3(-1, 0, movement.z)
+				movement = Vector3(-1.5, 0, movement.z)
 				animationPlayer.play("walk")
 		
 		if Input.is_action_pressed("Right"):
 			if position.x <= 5 and position.x >= -5:
-				movement = Vector3(1, 0, movement.z) 
+				movement = Vector3(1.5, 0, movement.z) 
 				animationPlayer.play("walk")
 		
 		if position.x >= 4.5:
@@ -61,4 +61,5 @@ func handle_input(delta):
 
 func score():
 	playerScore += 1
+	GameManager.miniGame.playerScore = playerScore
 	GameManager.miniGame.scoreLabel.text = "Score: " + str(playerScore)

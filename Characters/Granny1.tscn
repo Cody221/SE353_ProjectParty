@@ -1,9 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://b58ui48tdts1d"]
+[gd_scene load_steps=4 format=3 uid="uid://b58ui48tdts1d"]
 
 [ext_resource type="PackedScene" uid="uid://cnys3e4t64wcn" path="res://CharacterModels/character-female-c.glb" id="1_22s1a"]
 [ext_resource type="Script" path="res://Scripts/CharacterScripts/CharacterIdle.gd" id="1_yeksk"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8ykuk"]
+height = 1.0
 
 [node name="Granny1" type="Node3D"]
 script = ExtResource("1_yeksk")
 
 [node name="Granny1" parent="." instance=ExtResource("1_22s1a")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.467591, 0)
+shape = SubResource("CapsuleShape3D_8ykuk")
