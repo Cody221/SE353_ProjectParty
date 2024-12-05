@@ -4,7 +4,7 @@ extends Node3D
 @onready var cam = $Camera3D
 @onready var character = $Character
 @onready var characterBody = $Character/CharacterBody3D
-@onready var rollText = $UI/MarginContainer/VBoxContainer2/RichTextLabel
+
 #stats
 var speed : int = 0
 var health : int = 0
@@ -35,37 +35,34 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	#var localPos = GameManager.gridMap.to_local(position)
+	#gridPosition = GameManager.gridMap.local_to_map(localPos)
+	#position = GameManager.gridMap.map_to_local(gridPosition)
 	pass
 	
 
 func move():
 	var moveAmount = GameManager.diceManager.roll6(speed)
-	rollText.text = "Roll: %s" % moveAmount
-	#print(moveAmount)
+	ui.rollLabel.text = "Roll: %s" % moveAmount
 	var validTiles = GameManager.gridMap.get_valid_tiles(gridPosition, moveAmount)
-	#print(validTiles)
 	awaitingChoice = true
 	while awaitingChoice:
 		var tilePosition = await tile_chosen
-		print(position)
-		if tilePosition in validTiles:
-			print(tilePosition)
-			position = tilePosition
-			print(tilePosition)
-			print(position)
+		if GameManager.gridMap.a_star(gridPosition, tilePosition, moveAmount):
+			gridPosition = tilePosition
 			cam.position = Vector3(0, cam.position.y, 2)
-			#Move Player
-			var localPos = GameManager.gridMap.to_local(position)
-			gridPosition = GameManager.gridMap.local_to_map(localPos)
 			position = GameManager.gridMap.map_to_local(gridPosition)
-			if (position.x > 0.50):
-				position = Vector3(position.x + 1, position.y, position.z)
-			if position.z > 0.51:
-				position = Vector3(position.x, position.y, position.z + 1)
-						
-			
 			
 			awaitingChoice = false
+			ui.rollLabel.text = "Roll: " 
+		
+		#if tilePosition in validTiles:
+			#gridPosition = tilePosition
+			#cam.position = Vector3(0, cam.position.y, 2)
+			#position = GameManager.gridMap.map_to_local(gridPosition)
+			#
+			#awaitingChoice = false
+			#ui.rollLabel.text = "Roll: " 
 
 func _input(event):
 	if event.is_action_released("Select") and awaitingChoice == true:
@@ -90,8 +87,6 @@ func raycast_from_mouse(collisionMask, rayLength):
 	
 	var res = space.intersect_ray(query)
 	if res:
-		print("hit")
 		return res
 	else:
-		print("not")
 		return null
