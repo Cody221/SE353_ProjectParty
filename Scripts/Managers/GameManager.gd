@@ -6,6 +6,7 @@ var playersTurn : int #index of the player whose turn it is
 var Host
 
 var gridMap : GridMap
+var goalCell = Vector3i(5, 0, 5)
 
 #managers
 var diceManager : DiceManager
@@ -17,7 +18,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	#pass_turn()
+	for player in Players:
+		if player.gridPosition == goalCell:
+			end_game()
 	pass
 
 func pass_turn():
@@ -31,3 +34,6 @@ func pass_turn():
 	
 func load_scene(path:String):
 	get_tree().change_scene_to_file(path)
+
+func end_game():
+	get_tree().quit()
