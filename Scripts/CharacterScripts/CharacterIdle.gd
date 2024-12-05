@@ -1,12 +1,15 @@
 extends Node3D
 
+var nameOfScene
+var idle = true
+
 @onready var characterAnimationPlayerName = "%s/AnimationPlayer"
 @onready var anim = get_node(characterAnimationPlayerName % name)
 
 func _CharacterSelectAnim() -> void:
-	#print(get_parent().get_tree().get_current_scene().name)
-	if get_parent().get_tree().get_current_scene().name == "CharacterSelect":
+	if idle:
 		anim.play("walk")
+	
 
 
 # Called when the node enters the scene tree for the first time.

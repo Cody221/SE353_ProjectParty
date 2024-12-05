@@ -1,6 +1,7 @@
 extends Button
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pressed.connect(self._buttonPressed)
@@ -12,6 +13,4 @@ func _process(delta: float) -> void:
 	
 func _buttonPressed():
 	print("Bahnie the Bunny")
-	GameManager.load_scene("res://WorldScenes/DefaultWorld.tscn")
-	#MPIO.mpc.load_scene("res://WorldScenes/DefaultWorld.tscn", true)
-	#print(get_parent().get_parent().name)
+	GameManager.load_scene("res://WorldScenes/TestScene.tscn")

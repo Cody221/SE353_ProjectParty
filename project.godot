@@ -24,6 +24,11 @@ MPIO="*res://addons/MultiplayCore/MPIO.gd"
 
 file_logging/enable_file_logging=true
 
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/MultiplayCore/plugin.cfg", "res://addons/script-ide/plugin.cfg")

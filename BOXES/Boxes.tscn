@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjkhjfa3u1rvf"]
+
+[ext_resource type="PackedScene" uid="uid://ro6ypf5dvubd" path="res://BOXES/black_box_parent.tscn" id="1_5p46u"]
+[ext_resource type="PackedScene" uid="uid://pdl1ve0i46sd" path="res://BOXES/gray_box_parent.tscn" id="2_8vrv2"]
+[ext_resource type="PackedScene" uid="uid://cie7ebty07gsu" path="res://BOXES/green_box_parent.tscn" id="3_6im8w"]
+[ext_resource type="PackedScene" uid="uid://brghgwlydpwc5" path="res://BOXES/red_box_parent.tscn" id="4_3hnrk"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BlackBoxParent" parent="." instance=ExtResource("1_5p46u")]
+
+[node name="GrayBoxParent" parent="." instance=ExtResource("2_8vrv2")]
+
+[node name="GreenBoxParent" parent="." instance=ExtResource("3_6im8w")]
+
+[node name="RedBoxParent" parent="." instance=ExtResource("4_3hnrk")]
