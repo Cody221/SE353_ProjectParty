@@ -11,7 +11,7 @@ var playerScore = 0
 
 func _CharacterSelectAnim() -> void:
 	if idle:
-		anim.play("walk")
+		animationPlayer.play("walk")
 	
 
 
