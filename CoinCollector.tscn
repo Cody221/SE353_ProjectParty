@@ -31,7 +31,7 @@ transform = Transform3D(1, 0, 0, 0, 0.788473, 0.61507, 0, -0.61507, 0.788473, 0,
 sky_mode = 1
 
 [node name="Gramps1" parent="." instance=ExtResource("2_fih1x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0215507, 0.223093, -0.00156403)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0401273, 0.223093, -0.0378747)
 moveSpeed = 3
 
 [node name="GridMap" type="GridMap" parent="."]

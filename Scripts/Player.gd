@@ -45,8 +45,11 @@ func move():
 	awaitingChoice = true
 	while awaitingChoice:
 		var tilePosition = await tile_chosen
+		print(position)
 		if tilePosition in validTiles:
+			print(tilePosition)
 			position = tilePosition
+			print(position)
 			cam.position = Vector3(0, cam.position.y, 2)
 			awaitingChoice = false
 

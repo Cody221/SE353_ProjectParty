@@ -5,7 +5,7 @@ class_name coin_collector extends Node3D
 var rng = RandomNumberGenerator.new()
 var coinScene = preload("res://coin.tscn")
 #var coinList : Array
-var playerScore : int
+var playerScore = 0
 
 func _ready():
 	GameManager.miniGame = self
